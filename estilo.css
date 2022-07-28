@@ -1,0 +1,214 @@
+body {
+    background-image: url("https://cutewallpaper.org/21/tour-de-france-wallpaper/2018-Tour-De-France-Wallpapers-Wallpaper-Cave.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+    
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.presentacion {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    opacity: 0.9;
+    top: 60px;
+    margin-bottom: 200px;
+    margin-top: 60px;
+    border-top: 2px solid yellow;
+    border-bottom: 2px solid yellow;
+    z-index: -1;
+}
+
+.presentacion h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 8px;
+
+}
+.presentacion p{
+    color: white;
+    margin: 50px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.presentacion img{
+    position: absolute;
+    margin-top: -10px;
+    left: 22%;
+}
+
+section{
+    outline: none;
+    display: inline-block;
+    margin: 50px;
+    width: 300px;
+    height: 450px;
+    left: 10%;
+    background-color: black;
+    border-radius: 18px;
+    border: 2px solid yellow;
+    transition: transform .3s ease-in-out;
+}
+
+section:hover{
+    transform: translate(0,-10px);
+}
+
+section:hover p{
+    color:white;
+}
+
+#imgTour{
+    opacity: 0.9;
+    width: 300px;
+    height: 225px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+section #cuadrito{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    line-height: 52px;
+    color: black;
+    font-family: "Arial";
+    background-color: yellow;
+    width: 150px;
+    height: 55px;
+    top: 10%;
+    left: -4px;
+    border-radius: 3px;
+}
+
+section p{
+    cursor:default;
+    
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color .3s ease-in-out;
+}
+
+section a{
+    text-decoration: none;
+}
+
+
+
+#imgClasificaciones{
+    opacity: 0.9;
+    width: 300px;
+    height: 225px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+
+
+#imgAbout{
+    opacity: 0.9;
+    width: 300px;
+    height: 225px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+
+.boxLogin{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    width: 700px;
+    height: 260px;
+    background-color: rgba(0,0,0);
+    border-radius: 20px;
+    border: 2px solid yellow;
+}
+
+.boxLogin:hover #boton{
+    display: block;
+    transform: translateY(-10px);
+}
+
+.boxLogin img{
+    position: relative;
+    width: 60%;
+    height: 98.2%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid black;
+    clip-path: polygon(0 0, 0 800px, 300px 300px, 400px 0);
+}
+
+.boxLogin h2{
+    position: relative;
+    top: -95%;
+    text-align: right;
+    right: 42px;
+    color:white;
+    font-family: arial;
+    font-style: italic;
+}
+
+.boxLogin #boton{
+    position: relative;
+    top:-170px;
+    left: 63%;
+    background-color: yellow;
+    height: 60px;
+    width: 200px;
+    border-radius: 30px;
+    transition: transform .5s ease-in-out;
+}
+
+.boxLogin #boton p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 55px;
+    color:black;
+}
+
+.boxLogin a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 740px){
+    .boxLogin{
+        width: 400px;
+        height: 260px;
+        background-color: rgba(0,0,0);
+        border-radius: 20px;
+        border: 2px solid yellow;
+    }
+    
+    .boxLogin img{
+        position: relative;
+        object-fit: cover;
+        object-position: bottom;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        border: 2px solid black;
+        clip-path: none;
+    }
+    
+    .boxLogin #boton{
+        left: 25%;
+    }
+    .boxLogin h2{
+        right: 70px;
+        color:black;
+    }
+}

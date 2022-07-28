@@ -1,0 +1,65 @@
+footer{
+    color:white;
+    background-color: black;
+    font-family: arial;
+    font-size: 15px;
+    margin-top: 18%;
+    border-top: 2px solid yellow;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:    "uni cre ima"
+                            "uni cre ima"
+                            "uni cre ima";
+    padding: 20px;
+}
+
+.creditos{
+    grid-area: cre;
+    text-align: center;
+}
+
+.social{
+    grid-area: ima;
+    text-align: center;
+}
+
+.social img{
+    display: inline-block;
+    width: 30px;
+    margin: 10px;
+}
+
+.uni{
+    grid-area: uni;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uni img{
+    width:230px;   
+}
+
+@media (max-width:1080px) {
+    footer{
+        margin-top:1000px
+    }
+}
+
+@media (max-width:642px) {
+    footer{
+        grid-template-areas:    "uni cre cre"
+                                "uni cre cre"
+                                "ima ima ima";
+    }
+}
+
+@media (max-width:508px) {
+    footer{
+        grid-template-areas:    "uni uni uni"
+                                "cre cre cre"
+                                "ima ima ima";
+    }
+}
